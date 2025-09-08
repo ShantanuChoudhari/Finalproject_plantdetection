@@ -1,2 +1,21 @@
-# Finalproject_plantdetection
-5.Plant Disease Detection from Leaf Images Objective: Classify plant diseases using image recognition. Tools: Python, CNN (Keras), TensorFlow, OpenCV Mini-Guide: Use PlantVillage dataset Resize &amp; normalize images Train CNN on 4-5 classes of diseases Evaluate model accuracy Create GUI to upload leaf image Predict &amp; show results 
+Plant-Disease-Detection/
+│
+├── dataset/                 # PlantVillage dataset (leaf images)
+├── models/                  # Saved trained models
+├── app.py                   # Streamlit app file
+├── train.py                 # Model training script
+├── requirements.txt         # Dependencies
+├── README.md                # Project documentation
+└── Plant_Disease_Detection_Report.pdf  # Detailed report
+
+
+
+git clone https://github.com/ShantanuChoudhari/plant-disease-detection.git
+cd plant-disease-detection
+python -m venv venv
+source venv/bin/activate   # On Linux/Mac
+venv\Scripts\activate      # On Windows
+pip install -r requirements.txt
+python train.py
+streamlit run app.py
+
